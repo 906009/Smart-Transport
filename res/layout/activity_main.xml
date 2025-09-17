@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:elevation="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnZoomIn"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="4dp"
+            app:icon="@drawable/sharp_add_black_36"
+            app:iconSize="46dp"
+            app:iconTint="@android:color/white"
+            app:backgroundTint="@color/purple_500"
+            app:cornerRadius="24dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#22000000"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnZoomOut"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="4dp"
+            app:icon="@drawable/sharp_remove_black_36"
+            app:iconSize="46dp"
+            app:iconTint="@android:color/white"
+            app:backgroundTint="@color/purple_500"
+            app:cornerRadius="24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:elevation="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSettings"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="4dp"
+            app:icon="@drawable/baseline_settings_24"
+            app:iconSize="46dp"
+            app:iconTint="@color/purple_500"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="24dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:elevation="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLocation"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="4dp"
+            app:icon="@drawable/baseline_location_searching_24"
+            app:iconSize="46dp"
+            app:iconTint="@color/purple_500"
+            app:backgroundTint="@color/black"
+            app:cornerRadius="24dp"/>
+    </LinearLayout>
+</FrameLayout>
